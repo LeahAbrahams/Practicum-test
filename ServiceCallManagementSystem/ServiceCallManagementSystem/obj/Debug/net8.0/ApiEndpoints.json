@@ -1,0 +1,117 @@
+[
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.OfficesController",
+    "Method": "GetAllOffices",
+    "RelativePath": "api/Offices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.OfficesController",
+    "Method": "GetOfficeById",
+    "RelativePath": "api/Offices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.OfficesController",
+    "Method": "GetOfficeWithServiceCalls",
+    "RelativePath": "api/Offices/{id}/with-service-calls",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.OfficesController",
+    "Method": "GetAllOfficesWithOpenCallsCount",
+    "RelativePath": "api/Offices/with-open-calls-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.ServiceCallsController",
+    "Method": "GetAllServiceCalls",
+    "RelativePath": "api/ServiceCalls",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.ServiceCallsController",
+    "Method": "CreateServiceCall",
+    "RelativePath": "api/ServiceCalls",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "BL.DTOs.CreateServiceCallDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.ServiceCallsController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/ServiceCalls/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ServiceCallManagementSystem.Controllers.UpdateStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceCallManagementSystem.Controllers.ServiceCallsController",
+    "Method": "GetServiceCallsByOffice",
+    "RelativePath": "api/ServiceCalls/office/{officeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "officeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
